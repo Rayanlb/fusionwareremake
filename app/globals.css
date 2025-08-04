@@ -1,5 +1,15 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+/* ✅ Place these at the very top */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+}
 
 @custom-variant dark (&:is(.dark *));
 
